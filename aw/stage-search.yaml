@@ -1,0 +1,50 @@
+name: stage-search
+version: 0.1
+kind: agent-workflow
+intent:
+  default: "暇だから何か見たい"
+
+steps:
+  - id: discover
+    action: collect_sources
+    input: sources.yaml
+
+  - id: fetch
+    action: fetch_events
+
+  - id: normalize
+    action: normalize_event
+    output: data/events.jsonl
+
+  - id: dedupe
+    action: dedupe_events
+    key: id
+
+  - id: enrich
+    action: enrich_event
+    optional: true
+
+  - id: rank
+    action: rank_candidates
+    preferences:
+      - today
+      - nearby
+      - free
+      - cheap
+      - category_match
+
+  - id: recommend
+    action: candidates
+    output: data/week.json
+
+  - id: calendar
+    action: calendar_adapter
+    input: selected_event
+    formats:
+      - ics
+    optional: true
+
+loop:
+  trigger: schedule_or_user_intent
+  observe: calendar_and_event_changes
+  repeat: true
