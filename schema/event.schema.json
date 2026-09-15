@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "STAGE Event",
+  "type": "object",
+  "required": ["id", "date", "title", "category", "url", "source"],
+  "properties": {
+    "id": {"type": "string"},
+    "date": {"type": "string"},
+    "start_at": {"type": "string"},
+    "end_at": {"type": "string"},
+    "title": {"type": "string"},
+    "venue": {"type": "string"},
+    "area": {"type": "string"},
+    "address": {"type": "string"},
+    "artists": {"type": "array", "items": {"type": "string"}},
+    "category": {"type": "string"},
+    "organizer": {"type": "string"},
+    "price": {"type": "string"},
+    "url": {"type": "string", "format": "uri"},
+    "source": {"type": "string"},
+    "confidence": {"type": "string"}
+  }
+}
