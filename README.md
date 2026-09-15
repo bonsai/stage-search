@@ -18,24 +18,37 @@
 - `sports` — スポーツ・観戦
 - `other` — その他
 
+## Event Search Agent
+
+`python scripts/event_agent.py` が `sources.yaml` の公開データを取得し、共通 Event モデルへ正規化する。
+
+出力:
+
+- `data/events.jsonl` — 全イベントの正規化インデックス
+- `data/week.json` — 今日から7日間のイベント
+
+現在の一次ソース:
+
+- `idol-db` — IDOL Watch
+- `owarai-live` — お笑いライブDB
+
+ソースは `sources.yaml` に追加できる。将来的に演劇・祭り・講演会・展示・伝統芸能などを同じモデルへ接続する。
+
 ## Architecture
 
 ```text
 idol-db ───────┐
-               │
 owarai-live ───┤
-               │
-other sources ─┤
-               ↓
-          STAGE-Search
-               ↓
-        Event normalization
-               ↓
-          events.jsonl
-               ↓
-          week filter
-               ↓
-          今週のSTAGE
+               ├──→ STAGE Event Search Agent
+other sources ─┘              │
+                              ↓
+                       Event normalization
+                              ↓
+                         events.jsonl
+                              ↓
+                          week.json
+                              ↓
+                       今週のSTAGE
 ```
 
 ## Event model
