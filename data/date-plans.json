@@ -1,0 +1,9 @@
+{
+  "kind": "date-plan",
+  "date": null,
+  "theme": "owarai date",
+  "area": "",
+  "max_price": 5000,
+  "events": [],
+  "plan": ["meet", "event", "dinner", "walk_or_cafe"]
+}
