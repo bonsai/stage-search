@@ -1,0 +1,16 @@
+sources:
+  - id: idol-db
+    kind: jsonl
+    category: idol
+    url: https://raw.githubusercontent.com/bonsai/idol-db/main/data/idolwatch.jsonl
+
+  - id: owarai-live
+    kind: json
+    category: owarai
+    url: https://raw.githubusercontent.com/bonsai/owarai-live/main/.data/events.json
+
+  # Add more event databases here.
+  # - id: yose-db
+  #   kind: jsonl
+  #   category: traditional
+  #   url: https://raw.githubusercontent.com/bonsai/yose-db/main/data/events.jsonl
