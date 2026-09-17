@@ -1,0 +1,8 @@
+{"venue_id":"venue_complex:makuhari-messe","type":"venue_complex","name":"幕張メッセ","city":"千葉市","prefecture":"千葉県","country":"日本","scale":"large","source_url":"https://tiget.net/events/522619","confidence":"source_confirmed"}
+{"venue_id":"hall:makuhari-messe-7","type":"hall","name":"幕張メッセ 国際展示場 7ホール","parent_id":"venue_complex:makuhari-messe","city":"千葉市","prefecture":"千葉県","country":"日本","scale":"large","source_url":"https://tiget.net/events/522619","confidence":"source_confirmed"}
+{"venue_id":"hall:makuhari-messe-8","type":"hall","name":"幕張メッセ 国際展示場 8ホール","parent_id":"venue_complex:makuhari-messe","city":"千葉市","prefecture":"千葉県","country":"日本","scale":"large","source_url":"https://tiget.net/events/522619","confidence":"source_confirmed"}
+{"venue_id":"dome:tokyo-dome","type":"dome","name":"東京ドーム","city":"文京区","prefecture":"東京都","country":"日本","scale":"large","venue_class":"dome","confidence":"seed"}
+{"venue_id":"dome:kyocera-dome-osaka","type":"dome","name":"京セラドーム大阪","city":"大阪市","prefecture":"大阪府","country":"日本","scale":"large","venue_class":"dome","confidence":"seed"}
+{"venue_id":"dome:paypay-dome","type":"dome","name":"みずほPayPayドーム福岡","city":"福岡市","prefecture":"福岡県","country":"日本","scale":"large","venue_class":"dome","confidence":"seed"}
+{"venue_id":"dome:vanterin-dome-nagoya","type":"dome","name":"バンテリンドーム ナゴヤ","city":"名古屋市","prefecture":"愛知県","country":"日本","scale":"large","venue_class":"dome","confidence":"seed"}
+{"venue_id":"dome:es-con-field-hokkaido","type":"dome","name":"エスコンフィールドHOKKAIDO","city":"北広島市","prefecture":"北海道","country":"日本","scale":"large","venue_class":"dome","confidence":"seed"}
