@@ -1,0 +1,61 @@
+ticket_providers:
+  # Primary providers for low-price / idol / live-event discovery.
+  - id: tiget
+    name: TIGET
+    url: https://tiget.net/
+    categories: [idol, music, owarai, theater]
+    priority: 3
+
+  - id: ticketdive
+    name: TicketDive
+    url: https://ticketdive.com/
+    categories: [idol, music, owarai, theater]
+    priority: 3
+
+  - id: livepocket
+    name: LivePocket
+    url: https://t.livepocket.jp/
+    categories: [idol, music, owarai, theater]
+    priority: 3
+
+  - id: paylove
+    name: Paylove
+    url: https://paylove.org/
+    categories: [idol, music]
+    priority: 3
+
+  - id: eplus
+    name: e+
+    url: https://eplus.jp/
+    categories: [music, idol, theater, owarai]
+    priority: 2
+
+  - id: confetti
+    name: カンフェティ
+    url: https://www.confetti-web.com/
+    categories: [theater, owarai, traditional, music]
+    priority: 2
+
+  - id: peatix
+    name: Peatix
+    url: https://peatix.com/
+    categories: [talk, workshop, festival, other]
+    priority: 1
+
+  - id: passmarket
+    name: PassMarket
+    url: https://passmarket.yahoo.co.jp/
+    categories: [other, talk, workshop, festival]
+    priority: 1
+
+  - id: rakuten-ticket
+    name: 楽天チケット
+    url: https://ticket.rakuten.co.jp/
+    categories: [music, idol, theater]
+    priority: 1
+
+  - id: lawson-ticket
+    name: ローチケ
+    url: https://l-tike.com/
+    categories: [music, idol, theater, owarai]
+    priority: 1
