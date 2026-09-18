@@ -14,3 +14,6 @@ sources:
   #   kind: jsonl
   #   category: traditional
   #   url: https://raw.githubusercontent.com/bonsai/yose-db/main/data/events.jsonl
+
+# Ticket-provider registry is maintained separately in ticket_providers.yaml.
+# Crawlers should use provider IDs to retain source/provenance information.
